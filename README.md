@@ -18,70 +18,49 @@
 
 ### ✅ Prerequisites
 
-- Python 3.7 or higher
-- `pip` package manager
+- Python 3.7 or higher  
+- `pip` package manager  
 
 ---
 
 ### 🛠️ Setup
 
-1. **Clone the repository**
-git clone https://github.com/ShaunakG18/fastapi-chat.git
-cd fastapi-chat
-Clone the FastAPI backend
+1. **Clone the ChatLOG GUI repository**
+   ```bash
+   git clone https://github.com/ShaunakG18/ChatLOG.git
+   cd ChatLOG
+2. **Clone the FastAPI backend**
+   ```bash
+   git clone https://github.com/ShaunakG18/fastapi-chat.git
+   cd fastapi-chat
+3. (Optional) Create and activate a virtual environment  
+   - On macOS/Linux: `python -m venv venv` and then `source venv/bin/activate`  
+   - On Windows: `python -m venv venv` and then `venv\Scripts\activate`
 
-bash
-Copy
-Edit
-git clone https://github.com/ShaunakG18/fastapi-chat.git
-cd fastapi-chat
-(Optional) Create and activate a virtual environment
+4. Install the required dependencies using:  
+   `pip install -r requirements.txt`
 
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies
+5. Run the FastAPI backend server with:  
+   `uvicorn main:app --reload`
+6. Run the ChatLOG GUI app  
+   - Navigate to the `ChatLOG` directory  
+   - Run the GUI using: `python app.py`
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the FastAPI backend
+7. Access the chat  
+   - Use the GUI window (built with CustomTkinter), or  
+   - Open your browser and go to: `http://localhost:8000` to see the FastAPI backend
 
-bash
-Copy
-Edit
-uvicorn main:app --reload
-Run the ChatLOG GUI app (if separate Python file exists)
+---
 
-bash
-Copy
-Edit
-python app.py
-Access the chat (GUI or browser)
+## 📁 Project Structure
 
-Open the GUI app if using CustomTkinter
+**Main directories and important files:**
 
-Or open: http://localhost:8000
+- `ChatLOG/` – GUI chat client  
+  - `app.py` – Main GUI application  
+  - `requirements.txt` – GUI dependencies  
+  - `README.md` – Project documentation
 
-📁 Project Structure
-bash
-Copy
-Edit
-ChatLOG/
-├── app.py             # GUI chat client
-├── requirements.txt   # GUI dependencies
-├── README.md          # This file
-
-fastapi-chat/
-├── main.py            # FastAPI WebSocket backend
-├── requirements.txt
-📄 License
-This project is licensed under the MIT License.
-Feel free to use, modify, and distribute it with proper attribution.
-
-🙋‍♂️ Author
-Made by Shaunak G
-
+- `fastapi-chat/` – FastAPI WebSocket backend  
+  - `main.py` – FastAPI server logic  
+  - `requirements.txt` – Backend dependencies
