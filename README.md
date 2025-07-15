@@ -1,7 +1,5 @@
-# 💬 ChatLOG
-
-**ChatLOG** is a GUI-based real-time chat application built with **FastAPI**. It enables users to communicate seamlessly through a user-friendly interface, leveraging the power of asynchronous WebSocket connections.
-
+**ChatLOG** is a GUI-based real-time chat application built with **FastAPI**.  
+The backend is deployed live on **Render**, so users can instantly chat using the downloadable app.
 ---
 
 ## 🚀 Features
@@ -22,6 +20,13 @@
 - `pip` package manager  
 
 ---
+## 🔗 Download App
+
+You can download the ChatLOG GUI application (executable) from the link below:
+
+📁 [Download from Google Drive](https://drive.google.com/drive/folders/1UP6do9Rxg3Y0HoBdKQKyjl8bkuekPXzt?usp=drive_link)
+
+> ✅ This version is fully functional and connects directly to the live FastAPI backend deployed on Render — **no setup needed** to start chatting.
 
 ### 🛠️ Setup
 
